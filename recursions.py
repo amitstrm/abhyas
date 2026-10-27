@@ -20,3 +20,14 @@ def reverse_word(word):
 
     return reverse(word[1:]) + word[0]
 
+def gen_vakya(wordlist, index, vakya):
+    if index == len(wordlist):
+        print(vakya)
+        return
+
+    for word in wordlist[index]:
+        vakya.append(word)
+        gen_vakya(wordlist, index + 1, vakya )
+        vakya.pop()
+
+    
