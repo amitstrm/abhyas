@@ -151,6 +151,21 @@ def second_max_with_index(numbers):
 
     return second_highest_index, second_highest
 
+def nearest_small(dlist):
+    smaller_list = []
+    for i, num in enumerate(dlist):
+        pv = i - 1
+        while pv >= 0 :
+            if dlist[pv] < num:
+                smaller_list.append(dlist[pv])
+                break
+            pv -= 1
+        if pv < 0 :
+            smaller_list.append(-1)
+    return smaller_list
+
+    
+
 
 if __name__ == "__main__":
     print(second_max_with_index(NUMBERS))
