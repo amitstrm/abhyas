@@ -17,7 +17,7 @@ def jay_sitaram(func):
 
 @jay_sitaram
 def get_names():
-    return ['sachin', 'sunil', 'rajesh', 'brijesh', 'durgesh', 'amit', 'rajkumar']
+    return ['sitaram', 'radhasham', 'deval']
 
 
 names = get_names()
