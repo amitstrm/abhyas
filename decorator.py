@@ -52,7 +52,7 @@ def do_dharm(varn):
     elif varn == 'VSH':
         return ['madhav', 'chaitnya', 'mahaprabhu', 'vallbha']
 
-    return ['amit', 'sachin', 'sunil', 'rajesh', 'rajkumar', 'brijesh']
+    return ['sitaram']
 
 
 bmh = do_dharm('BMH')
